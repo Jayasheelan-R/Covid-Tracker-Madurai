@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<br><br>
+<div class="alert alert-secondary" role="alert" style="font-size:35px;width:80%">
+  <div class="font-weight-bold"><center>DR.Vijayabaskar (Heath Minister of Tamil Nadu) Tweets</center>
+  </div>
+</div>
+{% for val in eee %}
+<p style="color:white"> {{val}} </p></div>
+{% endfor %}
+{% endblock %}
+{% block active1 %}
+<li class="nav-item">
+{% endblock %}
+{% block active2 %}
+<li class="nav-item active">
+{% endblock %}
+{% block active3 %}
+<li class="nav-item">
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>
+
+
+<br>
+<div class="font-weight-lighter"><center>
+<div class="alert alert-light" role="alert" style="font-size:35px;width:50%;margin:0"><div class="font-weight-bold">COVID-19 TRACKER-<span style="font-size:35px" id="clock"></span></div></div>
+<br>
+
+
+
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;float:left;margin-left:70px;margin-right:70px;">
+  <div class="card-body">
+    <h6 style="font-size:40px;">TAMIL NADU</h6>
+    <ul style="padding:12px 12px;margin:1px;background-color:orange;float:left;font-size:20px;border-radius:2%;">
+      <div class="alert alert-warning" style="width:400px;" role="alert">Confirmed Cases <div class="font-weight-bold">{{tn_recovered}}</div></div>
+      <div class="alert alert-success" role="alert">Recovered Cases: <div class="font-weight-bold">{{tn_cases}}</div></div>
+      <div class="alert alert-warning" role="alert">Active Cases: <div class="font-weight-bold">{{tn_active}}</div></div>
+      <div class="alert alert-danger" role="alert">Deaths: <div class="font-weight-bold">{{tn_death}}</div></div>
+      </ul></div>
+  </div>
+
+
+
+
+  <div class="card text-white bg-dark mb-3" style="max-width: 100%;float:left;margin-left:70px;margin-right:70px;">
+  <div class="card-body">
+    <h6 style="font-size:40px;">MADURAI</h6>
+    <ul style="padding:12px 12px;margin:1px;background-color:orange;float:left;font-size:20px;border-radius:2%;">
+      <div class="alert alert-warning" style="width:400px;" role="alert">Confirmed Cases <div class="font-weight-bold">{{cases}}</div></div>
+      <div class="alert alert-success" role="alert">Recovered Cases: <div class="font-weight-bold">{{recovered}}</div></div>
+      <div class="alert alert-warning" role="alert">Active Cases: <div class="font-weight-bold">{{active}}</div></div>
+      <div class="alert alert-danger" role="alert">Deaths: <div class="font-weight-bold">{{death}}</div></div>
+    </ul></div></center>
+  </div>
+
+{% endblock %}
+{% block active1 %}
+<li class="nav-item active">
+{% endblock %}
+{% block active2 %}
+<li class="nav-item">
+{% endblock %}
+{% block active3 %}
+<li class="nav-item">
+{% endblock %}

@@ -1,0 +1,269 @@
+{% extends 'base.html' %}
+{% block css %}
+  p.one{
+    font-family:calibri;
+    border:1px dashed;
+    padding-top: 50px;
+    padding-right:200px;
+    padding-bottom:50px;
+    padding-left: 100px;
+    background-color:skyblue;
+    align:center
+  }
+  .about h2 {
+    font-size: 90px;
+    color: #42b3e5;
+    margin-top: 50px;
+  }
+  .about h2 {
+    font-size: 90px;
+    color: #42b3e5;
+    margin-top: 50px;
+  }
+  .about h4 {
+    font-size: 24px;
+    color: #737373;
+    margin-bottom: 45px;
+  }
+  .about-img img {
+    width: 100%;
+    margin:50px;
+  }
+  .single-about-detail {
+    position: relative;
+}
+  .pentagon-text-s h1 {
+    font-size: 54px;
+    color: #383838;
+    margin-top: 0;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+    position: absolute;
+    left: 15%;
+    width: 50px;
+    top: -6%;
+    margin-left:9px;
+  }
+  .pentagon-text-s {
+    font-family: calibri;
+    width: 70px;
+    height: 52px;
+    background: #fff;
+    position: relative;
+    top: -30px;
+    left: 43%;
+  }
+  .pentagon-text-s:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 34px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 15px solid #fff;
+  }
+  .pentagon-text-s:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: 0px;
+    border-left: 36px solid transparent;
+    border-right: 34px solid transparent;
+    border-top: 15px solid #fff;
+  }
+  .pentagon-text-j h1 {
+    font-size: 54px;
+    color: #383838;
+    margin-top: 0;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+    position: absolute;
+    left: 15%;
+    width: 50px;
+    top: -6%;
+    margin-left:13px;
+  }
+  .pentagon-text-j {
+    font-family: calibri;
+    width: 70px;
+    height: 52px;
+    background: #fff;
+    position: relative;
+    top: -30px;
+    left: 43%;
+  }
+  .pentagon-text-j:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 34px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 15px solid #fff;
+  }
+  .pentagon-text-j:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: 0px;
+    border-left: 36px solid transparent;
+    border-right: 34px solid transparent;
+    border-top: 15px solid #fff;
+  }
+  .pentagon-text-m h1 {
+    font-size: 54px;
+    color: #383838;
+    margin-top: 0;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+    position: absolute;
+    left: 15%;
+    width: 50px;
+    top: -6%;
+    margin-left:2px;
+  }
+  .pentagon-text-m {
+    font-family: calibri;
+    width: 70px;
+    height: 52px;
+    background: #fff;
+    position: relative;
+    top: -30px;
+    left: 43%;
+  }
+  .pentagon-text-m:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 34px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 15px solid #fff;
+  }
+  .pentagon-text-m:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: 0px;
+    border-left: 36px solid transparent;
+    border-right: 34px solid transparent;
+    border-top: 15px solid #fff;
+  }
+  .about-details {
+    background: #2a2a2a;
+    border-top: 2px solid #fff;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+    width:500px;
+    float:left;
+    margin-left:20px;
+    border-spacing: 10px;
+  }
+  .about-details h3 {text-align: center;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 0;
+    margin-left:10px;
+  }
+  .about-details p {
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 25px;
+    padding-bottom: 30px;
+  }
+  .single-about-detail:hover .about-details {
+    background: #3a9dca;
+  }
+  .single-about-detail:hover .pentagon-text h1 {
+    color: #3a9dca;
+  }
+  .about h2 {
+    font-size: 50px;
+    color: #42b3e5;
+    margin-top: 30px;
+  }
+  .service h2 {
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  .nav_down{
+    width:100%;
+    background-color:#2FA5EB !important;
+    border-bottom:2px solid #f0f0f0;
+  }
+  .nav_down div{
+    width:1200px;
+    color:#fff;
+    background-color:#000;
+    font-family:calibri;
+    padding:10px;
+    text-align:left;
+  }
+
+{% endblock %}
+{% block content %}
+
+<p id="one">
+<h3 align="center" style="color:white;" >Developers of the website...</h3>
+  <section class="about text-center" id="about">
+    <div class="container">
+      <div class="col-md-4 col-sm-6">
+        <div class="single-about-detail">
+          <br><br><br>
+            <div class="about-details">
+              <div class="pentagon-text-s">
+                <h1 class="sr">S&nbsp;</h1>
+              </div>
+              <h3>SREE VIGNESH</h3>
+              <p>Student of Department of Inforamtion Technology in Thiagarajar College of Engineering</p>
+            </div>
+          </div>
+          <div class="single-about-detail">
+          <div class="about-details" style="float:left">
+              <div class="pentagon-text-j">
+                <h1 class="js">J&nbsp;&nbsp;</h1>
+              </div>
+              <h3>JAYASHEELAN</h3>
+              <p>Student of Department of Inforamtion Technology in Thiagarajar College of Engineering</p>
+            </div>
+          </div>
+          <div class="single-about-detail">
+          <div class="about-details">
+              <div class="pentagon-text-m">
+                <h1 class="mk">M&nbsp;&nbsp;</h1>
+              </div>
+              <h3>MOHAN KUMAR</h3>
+              <p>Student of Department of Inforamtion Technology in Thiagarajar College of Engineering</p>
+            </div>
+          </div>
+        </div></div>
+      </section>
+    <div> <br>
+ <br><br><br><br><br><br><br><br><br><br><br>
+
+{% endblock %}
