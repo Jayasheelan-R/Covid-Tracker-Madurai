@@ -1,1 +1,1 @@
-# Covid-Tracker-Maduari
+# Covid-Tracker-Madurai
