@@ -74,15 +74,10 @@ Notes:
 
 Then open http://127.0.0.1:5000/ in your browser.
 
-## Important notes and limitations
-
-- Scraping Twitter by parsing HTML is fragile and may break if Twitter changes its markup or restricts access. For reliable, long-lived apps, use the Twitter API or an authorized data provider.
-- Scraping Wikipedia for critical numbers is also brittle. Prefer official data sources or APIs.
-- `app.py` performs network calls at import time which will slow startup and may fail if network access is unavailable. Consider refactoring to lazy-load or poll in a background task.
 
 ## Security & Privacy
 
-- This project scrapes only publicly available pages. Do not use it to access private or protected data. If you plan to deploy this app, make sure to follow rate limits and terms of service for the sites you query.
+- This project scrapes only publicly available pages. Do not use it to access private or protected data. make sure to follow rate limits and terms of service for the sites you query.
 
 ## Contributing
 
@@ -107,18 +102,7 @@ Edge cases to consider:
 
 ## License
 
-This repository does not include a license by default. If you want to make it open-source, add a LICENSE file (MIT is a permissive choice).
 
 ## Credits
 
-Original author: (your original name) — this README modernizes and documents the project for easier reuse.
-
----
-
-If you'd like, I can also:
-
-- add a pinned `requirements.txt` (I will add one now),
-- create a `.gitignore` (added), or
-- refactor `app.py` to avoid doing network calls at import time and make the project more robust.
-
-Tell me which of the follow-ups you'd like and I'll implement them.
+Original author: Jayasheelan R — this README modernizes and documents the project for easier reuse.
