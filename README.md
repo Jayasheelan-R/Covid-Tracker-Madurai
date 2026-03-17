@@ -79,30 +79,7 @@ Then open http://127.0.0.1:5000/ in your browser.
 
 - This project scrapes only publicly available pages. Do not use it to access private or protected data. make sure to follow rate limits and terms of service for the sites you query.
 
-## Contributing
-
-Small, focused improvements are welcome. Suggested next steps:
-
-- Refactor scraping into functions and add caching
-- Replace HTML scraping of Twitter with the official API
-- Add unit tests around parsing logic
-
-When contributing, open an issue first to discuss scope and approach.
-
-## Development checklist / contract
-
-- Input: HTTP requests to the Flask routes
-- Output: Rendered HTML pages using template variables from scraped data
-- Error modes: Network failures when scraping (app should handle gracefully)
-
-Edge cases to consider:
-- No network or target site unreachable
-- Unexpected HTML structure causing parsing failures
-- Slow scraping causing timeouts or blocking the server
-
-## License
-
 
 ## Credits
 
-Original author: Jayasheelan R — this README modernizes and documents the project for easier reuse.
+Original author: Jayasheelan R
